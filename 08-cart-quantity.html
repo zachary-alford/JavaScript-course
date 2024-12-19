@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>08-Cart Quantity</title>
+  </head>
+  <body>
+    <p>Cart Quantity</p>
+
+    <button onclick="
+      console.log(`Cart quantity: ${cartQuantity}`);
+    ">Show Quantity</button>
+
+    <button onclick="
+      updateCartQuantity(1);  
+    ">Add to Cart</button>
+
+    <button onclick="
+      updateCartQuantity(2);      
+    ">+2</button>
+
+    <button onclick="
+      updateCartQuantity(3);  
+    ">+3</button>
+
+    <button onclick="
+      updateCartQuantity(4);    
+    ">+4</button>
+
+    <button onclick="
+      updateCartQuantity(5);
+    ">+5</button>
+
+    <button onclick="
+      updateCartQuantity(-1);  
+    ">Remove from cart</button>
+
+    <button onclick="
+      updateCartQuantity(-2);
+    ">-2</button>
+
+    <button onclick="
+      updateCartQuantity(-3);
+    ">-3</button>
+
+    <button onclick="
+      cartQuantity = 0;
+      console.log('Cart was reset.');
+      console.log(`Cart quantity: ${cartQuantity}`);
+    ">Reset Cart</button>
+    
+    <script>
+      const product1 = {
+        name: 'basketball',
+        price: 2095
+      };
+      console.log(product1);
+     
+      product1.price += 500;
+      console.log(product1);
+
+      product1['delivery-time'] = '3 days';
+      console.log(product1);
+
+      const product2 = {
+        name: 'socks',
+        price: '1090'
+      };
+
+      function comparePrice(product1, product2) {
+        if (product1.price < product2.price) {
+          return product1;
+        } else {
+          return product2;
+        }
+      }
+
+      console.log(comparePrice(product1, product2));
+
+      function isSameProduct(product1, product2) {
+        return (product1.price === product2.price && product1.name === product2.name);
+      }
+
+      console.log(isSameProduct(product1, product2));
+
+      let cartQuantity = 0;
+
+      function updateCartQuantity (amount) {
+        if (cartQuantity + amount > 10) {
+          alert('The cart is full');
+          return;
+        } 
+        if (cartQuantity + amount < 0) {
+          alert('Not enough items in the cart');
+          return;
+        } 
+        cartQuantity += amount;
+        console.log(`Cart quantity: ${cartQuantity}`);
+      }
+    </script>
+  </body>
+</html>
