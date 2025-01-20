@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>9d-9f Exercise</title>
+  </head>
+  <body>
+    <input placeholder="name" class="nameInput" onkeydown="
+      if (event.key === 'Enter') {
+        displayMessage();
+      }  
+    ">
+
+    <button onclick="
+      displayMessage();
+    ">Submit</button>
+    
+    <p class="message"></p>
+
+    <script>
+      function displayMessage() {
+        const inputElement = document.querySelector('.nameInput');
+        document.querySelector('.message').innerHTML = `Your name is: ${inputElement.value}`;
+      }
+    </script>
+  </body>
+</html>
