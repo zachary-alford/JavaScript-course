@@ -1,0 +1,46 @@
+body {
+ background-color: rgb(25, 25, 25);
+ color: white;
+ font-family: Arial;
+}
+
+p {
+  display: block;
+}
+
+.header {
+ font-size: 30px;
+ font-weight: 600;
+}
+
+.choice {
+  height: 120px;
+  width: 120px;
+  border: 3px solid white;
+  background-color:rgb(25, 25, 25);
+  border-radius: 60px;
+  margin-right: 8px; 
+}
+
+.pick{
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  object-fit: fill;
+}
+
+.js-result {
+ font-size: 25px;
+ font-weight: 600;
+ margin-top: 50px;
+}
+
+.js-score {
+  margin-top: 50px;
+}
+
+.reset {
+  font-size: 15px;
+  border: none;
+  padding:8px 15px;
+}

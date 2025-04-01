@@ -1,0 +1,38 @@
+body {
+  background-color: black;
+  font-family: Arial;
+}
+
+p {
+ margin: 0px;
+}
+
+.displayNumber {
+  color: white;
+  font-size: 45px;
+  padding: 5px 0px 5px 0px;
+}
+
+button {
+  font-size: 25px;
+  color: white;
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  margin-right: 5px;
+  margin-bottom: 15px;
+}
+
+.gray-button {
+  background-color: rgb(60, 60, 60);
+}
+
+.orange-button {
+  background-color: rgb(254, 160, 10);
+}
+
+.clear-button {
+  font-size: 17px;
+  background-color: rgb(60, 60, 60);
+}
