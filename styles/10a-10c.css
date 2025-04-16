@@ -1,0 +1,26 @@
+.amazon-button {
+  background-color: rgb(255,216,20);
+  border: none;
+  font-size: 20px;
+  padding: 10px 70px;
+  border-radius: 20px;
+}
+
+.uber-button {
+  font-family: Arial;
+  font-size: 16px;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 8px;
+}
+
+.request-button {
+  background-color: black;
+  color: white;
+  margin-right: 25px;
+}
+
+.schedule-button {
+  background-color: rgb(230,230,230);
+  font-weight: 600;
+}

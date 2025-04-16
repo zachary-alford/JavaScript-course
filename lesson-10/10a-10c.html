@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lesson-10 Exercises</title>
+    <link rel="stylesheet" href="../styles/10a-10c.css">
+  </head>
+  <body>
+    <p>10a Amazon Button</p>
+
+    <button class="amazon-button">
+      Add to Cart
+    </button>
+
+    <p>10b Uber Buttons</p>
+
+    <button class="uber-button request-button">
+      Request now
+    </button>
+
+    <button class="uber-button schedule-button">
+      Schedule for later
+    </button>
+
+    <p>10c classList</p>
+
+    <button class="js-button">Test</button>
+  </body>
+  <script>
+    const buttonElement = document.querySelector('.js-button');
+
+    let result = buttonElement.classList.contains('js-button');
+
+    console.log(result);
+  </script>
+</html>

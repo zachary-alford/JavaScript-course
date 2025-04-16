@@ -13,34 +13,34 @@ p {
  font-weight: 600;
 }
 
-.choice {
+.move-button {
+  background-color: transparent;
   height: 120px;
   width: 120px;
   border: 3px solid white;
   background-color:rgb(25, 25, 25);
   border-radius: 60px;
-  margin-right: 8px; 
+  margin-right: 10px; 
 }
 
-.pick{
+.move-icon {
   height: 50px;
-  width: 50px;
-  background-color: transparent;
-  object-fit: fill;
+  cursor: pointer;
 }
 
-.js-result {
+.result {
  font-size: 25px;
  font-weight: 600;
  margin-top: 50px;
 }
 
-.js-score {
+.score {
   margin-top: 50px;
 }
 
-.reset {
+.reset-score-button {
   font-size: 15px;
   border: none;
   padding:8px 15px;
+  cursor: pointer;
 }
