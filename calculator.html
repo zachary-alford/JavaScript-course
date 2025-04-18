@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Calculator</title>
-    <link rel="stylesheet" href="../css/calculator.css"> 
+    <link rel="stylesheet" href="styles/calculator.css"> 
   </head>
   <body>
     <!-- <p>Calculator</p> -->
@@ -86,23 +86,6 @@
         localStorage.setItem('calculation', calculation);
       ">Clear</button>
     </p>
-    <script>
-      let calculation = localStorage.getItem('calculation') || '';
-
-      displayCalculation();
-
-      function updateCalculation (value) {
-        calculation += value;
-        displayCalculation();
-      }
-
-      function saveCalculation() {
-        localStorage.setItem('calculation', calculation);
-      }
-
-      function displayCalculation() {
-        document.querySelector('.displayNumber').innerHTML = calculation;
-      }
-    </script>
+    <script src="scripts/calculator.js"></script>
   </body>
 </html>
